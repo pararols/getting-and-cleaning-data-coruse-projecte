@@ -13,7 +13,8 @@ with the variables that have reference to mean or to std functions
 7. bind the two frames (test and train) in one (it could be done before)
 8. split the data frane by activity and by user
 9. calculate colmeans with lapply and data.frame to store the results
-10. save the result tidy data set to a file called: resultat.txt
+10. transpose data frame to accomplish with tidy data set principles every row 1 observation, every column 1 variable
+11. save the result tidy data set to a file called: resultat.txt
 
 License:
 ========
