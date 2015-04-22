@@ -29,7 +29,6 @@ run_project <- function() {
                             }
                 
         }
-  
         # assign names of activities to lables_test and labels_train
         activ<-data.frame(activiti=c("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS",
                           "SITTING","STANDING","LAYING"),stringsAsFactors=FALSE)
@@ -52,6 +51,7 @@ run_project <- function() {
         sumari<-split(data_fin,list(data_fin[,1],data_fin[,2]))
         #calculate means and put in a data frame
         result<-data.frame(lapply(sumari, function(x) colMeans(x[,3:88])))
+        result<-t(result)
         #write to a txt file
         write.table(result,"resultat.txt",row.name=FALSE)
 }
