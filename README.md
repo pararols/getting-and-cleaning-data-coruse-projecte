@@ -2,6 +2,7 @@
 The analysis has performed to get a tidy data set with the means of variables that has reference to mean and to std, ordereds by user and activity.
 
 TRANSFORMATIONS
+
 1. charge library dplyr
 2. load data in RStudio Version 0.98.1091
 3. change labels (names of variables) to data from X_test.txt and X_train.txt
